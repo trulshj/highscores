@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.container p {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.container a.active {
+  color: grey;
+}
+
+.right a {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.logo {
+  width: 20%;
+  margin-right: 2rem;
+}

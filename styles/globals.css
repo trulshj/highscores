@@ -2,17 +2,65 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-graphik);
+  background: var(--color-background);
+  color: var(--color-text-dark);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 0px solid var(--color-primary-cyan);
+}
+
+a:hover {
+  border-bottom: 3px dotted var(--color-primary-cyan);
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-recoleta);
+}
+
+button {
+  font-size: 1.1rem;
+  background: none;
+  cursor: pointer;
+  border: 2px solid var(--color-input-border);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  transition: 200ms all ease;
+}
+
+button:hover {
+  background-color: var(--color-input-border);
+}
+
+input {
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+:root {
+  --color-background: #f4f1e7;
+  --color-input-border: #ede8d7;
+  --color-primary-pink: #e61a6b;
+  --color-primary-purple: #423d89;
+  --color-primary-cyan: #03dac6;
+  --color-primary-cyan-darker: #028377;
+  --color-primary-peach: #ffc4bc;
+  --color-text-dark: #333333;
+  --color-text-light: #ffffff;
+
+  --font-recoleta: Recoleta, serif;
+  --font-graphik: Graphik Web, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +68,94 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: var(--color-text-light);
+    background: var(--color-text-dark);
   }
+}
+
+@font-face {
+  /* Regular */
+  font-family: "Recoleta";
+  src: url("/fonts/recoleta/3A95AC_6_0.eot");
+  src: url("/fonts/recoleta/3A95AC_6_0.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/recoleta/3A95AC_6_0.woff2") format("woff2"),
+    url("/fonts/recoleta/3A95AC_6_0.woff") format("woff"),
+    url("/fonts/recoleta/3A95AC_6_0.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  /* Medium */
+  font-family: "Recoleta";
+  src: url("/fonts/recoleta/3A95AC_3_0.eot");
+  src: url("/fonts/recoleta/3A95AC_3_0.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/recoleta/3A95AC_3_0.woff2") format("woff2"),
+    url("/fonts/recoleta/3A95AC_3_0.woff") format("woff"),
+    url("/fonts/recoleta/3A95AC_3_0.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+/*
+*  This font software is the property of Commercial Type.
+*
+*  You may not modify the font software, use it on another website, or install it on a computer.
+*
+*  License information is available at http://commercialtype.com/eula
+*  For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+*
+*  Copyright (C) 2020 Schwartzco Inc.
+*  License: 2002-YKRJPJ     
+*/
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/graphik/Graphik-MediumItalic-Web.woff2") format("woff2"),
+    url("/fonts/graphik/Graphik-MediumItalic-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/graphik/Graphik-Medium-Web.woff2") format("woff2"),
+    url("/fonts/graphik/Graphik-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/graphik/Graphik-RegularItalic-Web.woff2") format("woff2"),
+    url("/fonts/graphik/Graphik-RegularItalic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/graphik/Graphik-Regular-Web.woff2") format("woff2"),
+    url("/fonts/graphik/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/Graphik-LightItalic-Web.woff2") format("woff2"),
+    url("/fonts/Graphik-LightItalic-Web.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
 }

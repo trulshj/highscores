@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.listName {
+  margin: 0;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.form label input {
+  margin-left: 0.2rem;
+}
+
+.adminControls {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+}
+
+.table tr {
+  display: flex;
+}
+
+.table th,
+.table td {
+  flex: 1;
+  padding-bottom: 1rem;
+}
